@@ -34,8 +34,8 @@ h1 {
 }
 
 .button:hover {
-  background-color: var(--main-color-hover);
-  color: #2e2a2a;
+  background-color: #04d9ff;
+  color: #04d9ff;
   transition: all 0.3s;
 }
 
@@ -74,9 +74,9 @@ h1 {
   line-height: 60px;
 }
 .nav-container li a:hover {
-  color: var(--main-color);
+  color: #04d9ff;
   transition: all 0.3s;
-  border-bottom: 5px solid var(--main-color);
+  border-bottom: 5px solid #04d9ff;
 }
 .nav-container header label,
 #hamburger {
@@ -87,7 +87,7 @@ h1 {
 /* HERO */
 .hero-container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
-    url("images/WhatsApp Image 2024-03-19 at 08.26.24.jpeg");
+    url("images/anime-2D-digital-art-Hatsune-Miku-Vocaloid-anime-girls-1718005-wallhere.com.jpg");
   height: 70vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -106,13 +106,20 @@ h1 {
 
 .hero-text h1 {
   font-size: 4em;
-  color: var(--dark-color);
+  color: #ff1493;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  text-shadow:
+    -1px -1px 0 #04d9ff,  
+     1px -1px 0 #04d9ff,
+    -1px  1px 0 #04d9ff,
+     1px  1px 0 #04d9ff;
 }
 
 .hero-text p {
   font-size: 2em;
   margin: 0;
-  color: var(--dark-color);
+  color: white;
 }
 /* END OF HERO */
 
