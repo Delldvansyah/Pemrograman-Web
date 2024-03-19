@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dellon Davansyah">
+    <meta name="keyword" content="Form, Registrasi, Form Registrasi">
+    <meta name="description" content="Praktikum HTML Lanjutan">
+    <meta name="robots" content="index, follow">
+    <title>Form Registrasi</title>
+    <style>
+        /* Style untuk form */
+        form {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* Style untuk setiap fieldset */
+        fieldset {
+            border: none;
+            margin-bottom: 20px; /* Menambahkan ruang antar kotak */
+        }
+
+        /* Style untuk setiap label */
+        label {
+            display: block;
+            width: 150px;
+            margin-bottom: 5px;
+        }
+
+        /* Style untuk setiap input */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="file"],
+        select,
+        textarea {
+            width: calc(100% - 160px);
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Style untuk tombol */
+        input[type="reset"],
+        input[type="submit"],
+        input[type="button"] {
+            color: white;
+            padding: 10px 15px;
+            margin-top: 10px;
+            margin-right: 10px; /* Menambahkan ruang antar tombol */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100px;
+        }
+
+        /* Style untuk tombol reset */
+        input[type="reset"] {
+            background-color: #d60e07;
+        }
+
+        /* Style untuk tombol submit */
+        input[type="submit"] {
+            background-color: #13bdf1;
+        }
+
+        /* Style untuk tombol biasa */
+        input[type="button"] {
+            background-color: #4CAF50;
+        }
+
+        /* Style untuk tombol saat hover */
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        input[type="button"]:hover {
+            background-color: #645454;
+        }
+
+        /* Style untuk setiap checkbox kemampuan dasar */
+        input[type="checkbox"] {
+            display: inline-block;
+            margin-right: 10px; /* Memberikan jarak antar checkbox */
+        }
+
+        /* Style untuk judul */
+        h1 {
+            text-align: center;
+        }
+
+        /* Style untuk table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        /* Style untuk cell pada table */
+        td, th {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        /* Style untuk baris ganjil pada table */
+        tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Form Registrasi</h1>
+    <div>
+        <form action="" method="get">
+            <fieldset>
+                <legend>Biodata</legend>
+                <table>
+                    <tr>
+                        <td><label for="nama">Nama Lengkap:</label></td>
+                        <td><input type="text" id="nama" name="nama" placeholder="Nama Lengkap"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="nim">Nomor Induk Mahasiswa (NIM):</label></td>
+                        <td><input type="text" id="nim" name="nim" placeholder="Nomor Induk Mahasiswa"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="alamat">Alamat:</label></td>
+                        <td><textarea id="alamat" name="alamat" placeholder="Alamat"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tanggal">Tanggal Lahir:</label></td>
+                        <td><input type="date" id="tanggal" name="tanggal"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Jenis Kelamin:</label></td>
+                        <td>
+                            <input type="radio" name="gender" value="laki-laki" id="radio1" checked>
+                            <label for="radio1">Laki-laki</label>
+                            <input type="radio" name="gender" value="perempuan" id="radio2">
+                            <label for="radio2">Perempuan</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="foto">Upload Foto:</label></td>
+                        <td><input type="file" id="foto" name="foto"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="website">URL Website:</label></td>
+                        <td><input type="url" id="website" name="website" placeholder="URL Website"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="perguruan_tinggi">Perguruan Tinggi:</label></td>
+                        <td><input type="text" id="perguruan_tinggi" name="perguruan_tinggi" placeholder="Perguruan Tinggi"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Info Akun</legend>
+                <table>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email" placeholder="Email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="username">Username:</label></td>
+                        <td><input type="text" id="username" name="username" placeholder="Username"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password:</label></td>
+                        <td><input type="password" id="password" name="password" placeholder="Password"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="confirm_password">Ulangi Password:</label></td>
+                        <td><input type="password" id="confirm_password" name="confirm_password" placeholder="Ulangi Password"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Kemampuan Dasar</legend>
+                <table>
+                    <tr>
+                        <td><input type="checkbox" id="checkbox1" name="kemampuan[]" value="HTML">
+                            <label for="checkbox1">HTML</label></td>
+                        <td><input type="checkbox" id="checkbox2" name="kemampuan[]" value="CSS">
+                            <label for="checkbox2">CSS</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="checkbox3" name="kemampuan[]" value="JavaScript">
+                            <label for="checkbox3">JavaScript</label></td>
+                        <td><input type="checkbox" id="checkbox4" name="kemampuan[]" value="PHP">
+                            <label for="checkbox4">PHP</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="checkbox5" name="kemampuan[]" value="MySQL">
+                            <label for="checkbox5">MySQL</label></td>
+                        <td><input type="checkbox" id="checkbox6" name="kemampuan[]" value="Laravel">
+                            <label for="checkbox6">Laravel</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="checkbox7" name="kemampuan[]" value="React">
+                            <label for="checkbox7">React</label></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <p>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Simpan">
+                <input type="button" value="Button" onclick="">
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>
