@@ -1,0 +1,59 @@
+/* Style untuk form */
+form {
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Style untuk setiap fieldset */
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* Style untuk setiap label */
+label {
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 5px;
+}
+
+/* Style untuk setiap input */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"],
+input[type="tel"],
+input[type="url"],
+select,
+textarea {
+    width: calc(100% - 160px);
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style untuk tombol submit */
+button[type="submit"] {
+    color: white;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    background-color: #13bdf1;
+}
+
+/* Style untuk pesan kesalahan */
+.error {
+    color: red;
+}
+
+/* Style untuk h1 */
+h1 {
+    text-align: center;
+}

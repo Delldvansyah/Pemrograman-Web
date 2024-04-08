@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <h1>Form Registrasi</h1>
+
+    <div>
+        <form id="registrationForm" action="#" method="post">
+            <fieldset>
+                <legend>Biodata</legend>
+                <div>
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" placeholder="Nama Lengkap">
+                    <span id="namaError" class="error"></span>
+                </div>
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Username">
+                    <span id="usernameError" class="error"></span>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    <span id="emailError" class="error"></span>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Password">
+                    <span id="passwordError" class="error"></span>
+                </div>
+                <div>
+                    <label for="telepon">No Telepon:</label>
+                    <input type="tel" id="telepon" name="telepon" placeholder="No Telepon">
+                </div>
+                <div>
+                    <label>Jenis Kelamin:</label>
+                    <input type="radio" name="gender" value="laki-laki" id="genderMale">
+                    <label for="genderMale">Laki-laki</label>
+                    <input type="radio" name="gender" value="perempuan" id="genderFemale">
+                    <label for="genderFemale">Perempuan</label>
+                </div>
+                <div>
+                    <label for="website">Alamat Website:</label>
+                    <input type="url" id="website" name="website" placeholder="Alamat Website">
+                </div>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="assets/code.js"></script>
+</body>
+</html>
